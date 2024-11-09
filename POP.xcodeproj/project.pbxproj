@@ -15,7 +15,21 @@
 		E6B3698B2CDF01E5004CED4E /* Base in Resources */ = {isa = PBXBuildFile; fileRef = E6B3698A2CDF01E5004CED4E /* Base */; };
 		E6B369932CDF022B004CED4E /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B369922CDF022B004CED4E /* UserViewController.swift */; };
 		E6B369952CDF0309004CED4E /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B369942CDF0309004CED4E /* UserViewModel.swift */; };
+		E6B369972CDF04C9004CED4E /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B369962CDF04C9004CED4E /* UserService.swift */; };
+		E6B369992CDF04D4004CED4E /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B369982CDF04D4004CED4E /* APIManager.swift */; };
+		E6B3699B2CDF066E004CED4E /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B3699A2CDF066E004CED4E /* UserView.swift */; };
+		E6B369A32CDF114D004CED4E /* POPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B369A22CDF114D004CED4E /* POPTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E6B369A42CDF114D004CED4E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E6B369732CDF01DC004CED4E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E6B3697A2CDF01DC004CED4E;
+			remoteInfo = POP;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		E6B3697B2CDF01DC004CED4E /* POP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = POP.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -28,10 +42,22 @@
 		E6B3698C2CDF01E5004CED4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E6B369922CDF022B004CED4E /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
 		E6B369942CDF0309004CED4E /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		E6B369962CDF04C9004CED4E /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		E6B369982CDF04D4004CED4E /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		E6B3699A2CDF066E004CED4E /* UserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
+		E6B369A02CDF114D004CED4E /* POPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = POPTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6B369A22CDF114D004CED4E /* POPTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POPTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		E6B369782CDF01DC004CED4E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6B3699D2CDF114D004CED4E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -45,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				E6B3697D2CDF01DC004CED4E /* POP */,
+				E6B369A12CDF114D004CED4E /* POPTests */,
 				E6B3697C2CDF01DC004CED4E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				E6B3697B2CDF01DC004CED4E /* POP.app */,
+				E6B369A02CDF114D004CED4E /* POPTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -64,13 +92,24 @@
 				E6B369802CDF01DC004CED4E /* SceneDelegate.swift */,
 				E6B369822CDF01DC004CED4E /* ViewController.swift */,
 				E6B369922CDF022B004CED4E /* UserViewController.swift */,
+				E6B3699A2CDF066E004CED4E /* UserView.swift */,
 				E6B369942CDF0309004CED4E /* UserViewModel.swift */,
+				E6B369962CDF04C9004CED4E /* UserService.swift */,
+				E6B369982CDF04D4004CED4E /* APIManager.swift */,
 				E6B369842CDF01DC004CED4E /* Main.storyboard */,
 				E6B369872CDF01E5004CED4E /* Assets.xcassets */,
 				E6B369892CDF01E5004CED4E /* LaunchScreen.storyboard */,
 				E6B3698C2CDF01E5004CED4E /* Info.plist */,
 			);
 			path = POP;
+			sourceTree = "<group>";
+		};
+		E6B369A12CDF114D004CED4E /* POPTests */ = {
+			isa = PBXGroup;
+			children = (
+				E6B369A22CDF114D004CED4E /* POPTests.swift */,
+			);
+			path = POPTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -93,6 +132,24 @@
 			productReference = E6B3697B2CDF01DC004CED4E /* POP.app */;
 			productType = "com.apple.product-type.application";
 		};
+		E6B3699F2CDF114D004CED4E /* POPTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E6B369A62CDF114D004CED4E /* Build configuration list for PBXNativeTarget "POPTests" */;
+			buildPhases = (
+				E6B3699C2CDF114D004CED4E /* Sources */,
+				E6B3699D2CDF114D004CED4E /* Frameworks */,
+				E6B3699E2CDF114D004CED4E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E6B369A52CDF114D004CED4E /* PBXTargetDependency */,
+			);
+			name = POPTests;
+			productName = POPTests;
+			productReference = E6B369A02CDF114D004CED4E /* POPTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -105,6 +162,10 @@
 				TargetAttributes = {
 					E6B3697A2CDF01DC004CED4E = {
 						CreatedOnToolsVersion = 15.4;
+					};
+					E6B3699F2CDF114D004CED4E = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = E6B3697A2CDF01DC004CED4E;
 					};
 				};
 			};
@@ -122,6 +183,7 @@
 			projectRoot = "";
 			targets = (
 				E6B3697A2CDF01DC004CED4E /* POP */,
+				E6B3699F2CDF114D004CED4E /* POPTests */,
 			);
 		};
 /* End PBXProject section */
@@ -137,6 +199,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E6B3699E2CDF114D004CED4E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -146,13 +215,32 @@
 			files = (
 				E6B369832CDF01DC004CED4E /* ViewController.swift in Sources */,
 				E6B369932CDF022B004CED4E /* UserViewController.swift in Sources */,
+				E6B369972CDF04C9004CED4E /* UserService.swift in Sources */,
+				E6B3699B2CDF066E004CED4E /* UserView.swift in Sources */,
 				E6B3697F2CDF01DC004CED4E /* AppDelegate.swift in Sources */,
 				E6B369952CDF0309004CED4E /* UserViewModel.swift in Sources */,
 				E6B369812CDF01DC004CED4E /* SceneDelegate.swift in Sources */,
+				E6B369992CDF04D4004CED4E /* APIManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6B3699C2CDF114D004CED4E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6B369A32CDF114D004CED4E /* POPTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E6B369A52CDF114D004CED4E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E6B3697A2CDF01DC004CED4E /* POP */;
+			targetProxy = E6B369A42CDF114D004CED4E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		E6B369842CDF01DC004CED4E /* Main.storyboard */ = {
@@ -347,6 +435,40 @@
 			};
 			name = Release;
 		};
+		E6B369A72CDF114D004CED4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.carrington.POPTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/POP.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/POP";
+			};
+			name = Debug;
+		};
+		E6B369A82CDF114D004CED4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.carrington.POPTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/POP.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/POP";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -364,6 +486,15 @@
 			buildConfigurations = (
 				E6B369902CDF01E5004CED4E /* Debug */,
 				E6B369912CDF01E5004CED4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E6B369A62CDF114D004CED4E /* Build configuration list for PBXNativeTarget "POPTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6B369A72CDF114D004CED4E /* Debug */,
+				E6B369A82CDF114D004CED4E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
