@@ -27,7 +27,6 @@ class UserViewController: UIViewController {
         self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
         self.viewModel?.view  = self
-        
     }
     
     required init?(coder: NSCoder) {
@@ -65,18 +64,7 @@ class UserViewController: UIViewController {
     
 }
 
-
-
-struct UserResponse: Decodable {
-  let data: User
-}
-
-struct User: Decodable {
-  let id: Int
-  let email: String
-  let avatar: String
-}
-
+//MARK: - Extensions / Delegates
 
 extension UserViewController: UserView {
     func updateView(imageUrl: String, email: String) {

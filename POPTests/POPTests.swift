@@ -51,8 +51,8 @@ final class POPTests: XCTestCase {
         serviceUndertest.fetchUser()
         // then
         XCTAssertEqual(view.updateViewArray.count, 1)
-        XCTAssertNotEqual(view.updateViewArray[0].email, "carrington@gmail.com")
-        XCTAssertNotEqual(view.updateViewArray[0].imageUrl, "https://www.picsum.com/2")
+        XCTAssertEqual(view.updateViewArray[0].email, "No User found")
+        XCTAssertEqual(view.updateViewArray[0].imageUrl, "https://cdn1.iconfinder.com/data/icons/user-fill-icons-set/144/User003_Error-1024.jpg")
     }
 }
 

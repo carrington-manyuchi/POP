@@ -19,6 +19,8 @@
 		E6B369992CDF04D4004CED4E /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B369982CDF04D4004CED4E /* APIManager.swift */; };
 		E6B3699B2CDF066E004CED4E /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B3699A2CDF066E004CED4E /* UserView.swift */; };
 		E6B369A32CDF114D004CED4E /* POPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B369A22CDF114D004CED4E /* POPTests.swift */; };
+		E6B369AA2CDF5E68004CED4E /* UserResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B369A92CDF5E68004CED4E /* UserResponse.swift */; };
+		E6B369AC2CDF5E7A004CED4E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B369AB2CDF5E7A004CED4E /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		E6B3699A2CDF066E004CED4E /* UserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
 		E6B369A02CDF114D004CED4E /* POPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = POPTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6B369A22CDF114D004CED4E /* POPTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POPTests.swift; sourceTree = "<group>"; };
+		E6B369A92CDF5E68004CED4E /* UserResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserResponse.swift; sourceTree = "<group>"; };
+		E6B369AB2CDF5E7A004CED4E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,12 +94,11 @@
 			children = (
 				E6B3697E2CDF01DC004CED4E /* AppDelegate.swift */,
 				E6B369802CDF01DC004CED4E /* SceneDelegate.swift */,
-				E6B369822CDF01DC004CED4E /* ViewController.swift */,
-				E6B369922CDF022B004CED4E /* UserViewController.swift */,
-				E6B3699A2CDF066E004CED4E /* UserView.swift */,
-				E6B369942CDF0309004CED4E /* UserViewModel.swift */,
-				E6B369962CDF04C9004CED4E /* UserService.swift */,
-				E6B369982CDF04D4004CED4E /* APIManager.swift */,
+				E6B369B12CDF5F33004CED4E /* Controllers */,
+				E6B369AD2CDF5ED5004CED4E /* Model */,
+				E6B369B02CDF5F19004CED4E /* View Model */,
+				E6B369AF2CDF5EF9004CED4E /* Service */,
+				E6B369AE2CDF5EF0004CED4E /* Manager */,
 				E6B369842CDF01DC004CED4E /* Main.storyboard */,
 				E6B369872CDF01E5004CED4E /* Assets.xcassets */,
 				E6B369892CDF01E5004CED4E /* LaunchScreen.storyboard */,
@@ -110,6 +113,49 @@
 				E6B369A22CDF114D004CED4E /* POPTests.swift */,
 			);
 			path = POPTests;
+			sourceTree = "<group>";
+		};
+		E6B369AD2CDF5ED5004CED4E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E6B369A92CDF5E68004CED4E /* UserResponse.swift */,
+				E6B369AB2CDF5E7A004CED4E /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E6B369AE2CDF5EF0004CED4E /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				E6B369982CDF04D4004CED4E /* APIManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		E6B369AF2CDF5EF9004CED4E /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				E6B369962CDF04C9004CED4E /* UserService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		E6B369B02CDF5F19004CED4E /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				E6B3699A2CDF066E004CED4E /* UserView.swift */,
+				E6B369942CDF0309004CED4E /* UserViewModel.swift */,
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		E6B369B12CDF5F33004CED4E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E6B369822CDF01DC004CED4E /* ViewController.swift */,
+				E6B369922CDF022B004CED4E /* UserViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,6 +267,8 @@
 				E6B369952CDF0309004CED4E /* UserViewModel.swift in Sources */,
 				E6B369812CDF01DC004CED4E /* SceneDelegate.swift in Sources */,
 				E6B369992CDF04D4004CED4E /* APIManager.swift in Sources */,
+				E6B369AC2CDF5E7A004CED4E /* User.swift in Sources */,
+				E6B369AA2CDF5E68004CED4E /* UserResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
